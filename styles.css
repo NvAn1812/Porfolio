@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: linear-gradient(135deg, #101010, #1d0030);
+    min-height: 100vh;
+    color: white;
+
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+ .logo{
+    font-size: 40px;
+    font-weight: 600;
+    background: linear-gradient(to right, #9932CC, #FF6984);
+    background-clip: text;
+    color: transparent;
+ }
+
+nav ul{
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    border-bottom: 1px solid black;
+
+}
+.button{
+    background: linear-gradient(to right, #9932CC, #FF6984);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 50px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    
+ }
+main {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: row;
+    margin-top: 50px;
+}
+
+main img {
+    align-self: flex-start;
+}
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+ .content h1{
+    font-size: 40px;
+    font-weight: 600;
+    background: linear-gradient(to right, #9932CC, #FF6984);
+    background-clip: text;
+    color: transparent;
+}
+.content h1 {
+    font-size: 65px;
+}
+
+.content h1 span {
+    background: linear-gradient(to right, #9932CC, #FF6984);
+    background-clip: text;
+    color: transparent;
+}
+
+.content p:nth-of-type(1) {
+    color: rgb(200, 182, 226 );
+    font-size: 20px;
+}
+.content p:nth-of-type(2) {
+    color: rgb(168168, 167, 168 );
+    font-size: 25px;
+}
+
+.readmore {
+    background: transparent;
+    border: 2px solid #9932CC;
+    position: relative;
+    z-index: 1;
+    overflow: HIDDEN;
+}
+.start:hover {
+   transform: translateY(-3px); 
+   box-shadow: -1px 9px 12px 0 rgba(153, 50, 204, 0.6);
+
+}
+
+.readmore:before{
+    content: '';
+    position: absolute;
+    background: #9932CC;
+    width: 0%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    transition: all 0.3s;
+    z-index: -1;
+}
+.readmore:hover::before{
+    width: 100%;
+
+}
